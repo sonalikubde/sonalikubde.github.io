@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var image = 'cd';
+		function change() {
+			var imm = document.getElementById('myImage');
+			if(image == 'cd'){
+				imm.src = "cloth5.jpg";
+				image='de';
+			}
+			else
+			{
+				imm.src = "men1.jpg";
+				image = 'cd';
+			}
+		}var timer = setInterval("change();",1000);
+ 
+
+		
+	</script>
+	<style type="text/css">
+	
+		h1{
+			height: 20px;
+	}
+	.top-right {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.top-right1 {
+    position: absolute;
+    top: 8px;
+    left: 800px;
+}
+		.marg
+		{
+			height: 350px;
+		}
+		.abc{
+			height: 200px;
+		}
+		img{
+			display: block;
+    margin-left: auto;
+    margin-right: auto;
+		}
+		body{
+			background-color: coral;
+			background-repeat: repeat-y;
+		}
+		.b1{
+			color: coral;
+			text-decoration-color: black;
+			height: 30px;
+			width: 70px;
+		}
+		button.b2{
+			color: coral;
+			text-decoration-color: black;
+			height: 30px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="marg">
+	<img src="logo1.jpg" width="100%" height="250px">
+  <div class="top-right">
+  <a href="loginn.html"><input type="button" name="login" class="b1" value="login"></a>
+  </div>
+  <div class="top-right1">
+  	<a href="new.html"><button class="b2">create new</button></a>
+  </div>
+
+	<h1 align="center" ><u>WELCOME TO FASHION HUB</u></h1>
+</div>
+<div class="abc">
+		<img src="cloth.jpg" id="myImage" alt="image load" width="50%;" height="350px;" onclick="ClearInterval();">
+</body>
+</html>
